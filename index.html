@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tobi Wagner</title>
+<meta name="description" content="Tobi Wagner – Foto- & Videograf | Social Media Experte. Kontakt speichern.">
+<meta property="og:title" content="Tobi Wagner">
+<meta property="og:description" content="Foto- & Videograf | Social Media Experte">
+<meta property="og:image" content="foto.jpg">
+<meta name="theme-color" content="#171923">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,800;1,6..12,400&display=swap">
+<style>
+  :root {
+    --bg: #171923;
+    --blue: #3d5bb0;
+    --blue-hover: #4a69c2;
+    --text: #ffffff;
+    --text-soft: #d9dce8;
+    --line: #2a2e3d;
+    --font: "Nunito Sans", "Avenir Next", Avenir, system-ui, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  .card { max-width: 520px; margin: 0 auto; padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px)); }
+
+  .hero { position: relative; overflow: hidden; border-radius: 0 0 0 0; }
+  .hero img.foto { display: block; width: 100%; aspect-ratio: 1320 / 1076; object-fit: cover; }
+  .hero svg { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: auto; display: block; }
+  .logo { position: absolute; right: 7%; bottom: 3%; width: 17%; max-width: 110px; }
+
+  .who { display: flex; gap: 18px; padding: 28px max(24px, env(safe-area-inset-right, 0px)) 8px max(24px, env(safe-area-inset-left, 0px)); }
+  .who::before { content: ""; flex: none; width: 0; border-left: 2px dotted #8a90a6; margin: 4px 0; }
+  h1 { margin: 0; font-size: clamp(30px, 8.5vw, 40px); font-weight: 800; letter-spacing: -0.01em; line-height: 1.15; }
+  .rolle { margin: 6px 0 0; font-size: clamp(17px, 4.6vw, 21px); font-style: italic; color: var(--text-soft); line-height: 1.35; }
+
+  .links { list-style: none; margin: 28px 0 0; padding: 0 max(24px, env(safe-area-inset-right, 0px)) 0 max(24px, env(safe-area-inset-left, 0px)); display: grid; gap: 14px; }
+  .links a { display: flex; align-items: center; gap: 18px; color: var(--text); text-decoration: none; font-size: clamp(17px, 4.6vw, 20px); padding: 2px 0; border-radius: 40px; }
+  .links a:focus-visible { outline: 2px solid var(--blue-hover); outline-offset: 4px; }
+  .icon { flex: none; width: 56px; height: 56px; border-radius: 50%; background: var(--blue); display: grid; place-items: center; transition: background .15s; }
+  .links a:hover .icon { background: var(--blue-hover); }
+  .icon svg { width: 26px; height: 26px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .links span.txt { min-width: 0; overflow-wrap: anywhere; }
+
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg); border-top: 1px solid var(--line);
+         padding: 14px max(20px, env(safe-area-inset-right, 0px)) calc(14px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px)); }
+  .save { display: flex; align-items: center; justify-content: center; gap: 12px; max-width: 480px; margin: 0 auto; height: 60px; border-radius: 14px;
+          background: var(--blue); color: #fff; text-decoration: none; font-weight: 800; font-size: 19px; letter-spacing: 0.04em; text-transform: uppercase;
+          border: 1.5px solid #5a75c9; transition: background .15s, transform .1s; }
+  .save:hover { background: var(--blue-hover); }
+  .save:active { transform: scale(0.98); }
+  .save:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  .save svg { width: 24px; height: 24px; fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="hero">
+    <img class="foto" src="foto.jpg" alt="Tobi Wagner mit Cap und Hoodie, hält ein Smartphone">
+    <svg viewBox="0 0 1320 330" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 90 C 180 210, 420 250, 640 170 C 860 90, 1040 0, 1320 40 L1320 330 L0 330 Z" fill="#3d5bb0"/>
+      <path d="M0 150 C 180 260, 420 300, 640 220 C 860 140, 1040 50, 1320 90 L1320 330 L0 330 Z" fill="#171923"/>
+    </svg>
+    <img class="logo" src="logo.png" alt="TW Logo">
+  </div>
+
+  <section class="who">
+    <div>
+      <h1>Tobi Wagner</h1>
+      <p class="rolle">Foto- &amp; Videograf | Social Media Experte</p>
+    </div>
+  </section>
+
+  <ul class="links">
+    <li><a href="tel:+4915901403250">
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+      <span class="txt">+49 1590 1403250</span></a></li>
+    <li><a href="https://instagram.com/tobi_wagner" target="_blank" rel="noopener">
+      <span class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r="0.6" fill="#fff"/></svg></span>
+      <span class="txt">@tobi_wagner</span></a></li>
+    <li><a href="mailto:Info@tobiwagner.com">
+      <span class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+      <span class="txt">Info@tobiwagner.com</span></a></li>
+    <li><a href="https://www.tobiwagner.com" target="_blank" rel="noopener">
+      <span class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M14 9v10"/></svg></span>
+      <span class="txt">www.tobiwagner.com</span></a></li>
+  </ul>
+</main>
+
+<div class="bar">
+  <a class="save" href="tobi-wagner.vcf" type="text/vcard">
+    <svg viewBox="0 0 24 24"><circle cx="10" cy="8" r="4"/><path d="M3 20a7 7 0 0 1 12.5-4.3M18 14v6M15 17h6"/></svg>
+    Kontakt speichern
+  </a>
+</div>
+</body>
+</html>
